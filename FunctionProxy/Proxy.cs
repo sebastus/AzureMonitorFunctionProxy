@@ -94,8 +94,6 @@ namespace FunctionProxy
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             ServicePointManager.ServerCertificateValidationCallback += new RemoteCertificateValidationCallback(ValidateMyCert);
 
-            log.LogInformation(newClientContent);
-
             var client = new SingleHttpClientInstance();
             try
             {
